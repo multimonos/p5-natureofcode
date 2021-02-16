@@ -5,8 +5,7 @@ import WindowResized from "./mixin/WindowResized"
 
 
 const sketch = p => {
-
-    Object.assign(p, WindowResized(p))
+    WindowResized(p)
 
     let ctr
 

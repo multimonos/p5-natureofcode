@@ -3,9 +3,10 @@ import WindowResized from "./mixin/WindowResized";
 
 export default p => {
 
+    WindowResized(p)
+
     let ctr
 
-    Object.assign(p, WindowResized(p))
 
     p.setup = () => {
         p.createCanvas(p.windowWidth, p.windowHeight);
